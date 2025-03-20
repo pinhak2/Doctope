@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7c953ae44e31b160fffc545c152493dfcfc5d178936624af9d8ca3bc615a5d8a
-size 265
+#Script para fitar MHC_4D2 sobre o donor_MHC:
+#v1.0
+from pymol.cgo import *
+from pymol import cmd
+#
+cmd.load ("donor_MHC.pdb")
+cmd.load ("MHC_4D2.pdb")
+#
+cmd.do ("fit MHC_4D2, donor_MHC")
+#
+cmd.do ("remove donor_MHC")
+#
+cmd.do ("save MHC_4D2.pdb")
+
+

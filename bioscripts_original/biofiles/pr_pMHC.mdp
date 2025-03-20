@@ -1,3 +1,43 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:859287b3ebbecfc0b2cb1eefb5168091708678cb7f703bee1a9a8d5a81301cd6
-size 1300
+title               =  Yo
+cpp                 =  /lib/cpp
+define              =  -DPOSRES
+constraints         =  all-bonds
+integrator          =  md
+dt                  =  0.002    ; ps !
+nsteps              =  500    ; total 1 ps.
+nstcomm             =  1
+nstxout             =  250
+nstvout             =  1000
+nstfout             =  0
+nstlog              =  100
+nstenergy           =  100
+nstlist             =  10
+ns_type             =  grid
+rlist               =  1.0
+coulombtype        =  PME
+rcoulomb            =  1.0
+vdwtype             =  cut-off
+rvdw                =  1.4
+fourierspacing        =  0.12
+fourier_nx        =  0
+fourier_ny        =  0
+fourier_nz        =  0
+pme_order        =  4
+ewald_rtol        =  1e-5
+optimize_fft        =  yes
+; Berendsen temperature coupling is on in three groups
+Tcoupl              =  berendsen
+tau_t               =  0.1 0.1 
+tc_grps            =  Protein SOL  
+ref_t               =  100 100 
+; Pressure coupling is not on
+Pcoupl              =  parrinello-rahman
+pcoupltype          =  isotropic
+tau_p               =  0.5
+compressibility     =  4.5e-5
+ref_p               =  1.0
+; Generate velocites is on at 100 K.
+gen_vel             =  yes
+gen_temp            =  100.0
+gen_seed            =  173529
+

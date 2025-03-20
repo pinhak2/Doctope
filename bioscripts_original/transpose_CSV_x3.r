@@ -1,3 +1,5 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a83f505691514a2fc2ab6ac3ad8cf25e74e6fd3206026970576a78f63a6c608b
-size 182
+#!/usr/bin/Rscript
+#v1.0
+Table <- read.csv("Table_input.csv", header = TRUE)
+Table_trans <- t(Table)
+write.csv(Table_trans, file = "Table_transposed_output.csv", quote = FALSE)

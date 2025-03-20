@@ -1,3 +1,40 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26cadf9348053b8d9a81d5bf90e39bba7e1fbf5f695235a2cb90be6f22e3f605
-size 1284
+FROM ubuntu:bionic
+
+# avoid interactive configuration dialog from tzdata, which gets pulled in
+# as a dependency
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Copy Rosetta, Reduce, and GradDock to /docktope
+ADD docktope_files.tar.gz /docktope
+ADD mgltools_x86_64Linux2_1.5.7rc1.tar.gz /docktope
+ADD autodock_vina_1_1_2_linux_x86.tgz /docktope/
+
+RUN apt-get update && \
+    apt-get install -y \
+    software-properties-common
+
+RUN apt-add-repository universe
+
+RUN apt-get update && \
+    apt-get install -y \
+    gromacs \ 
+    bc \
+    pymol \
+    python-pip \
+    htop \
+    vim
+
+RUN pip install numpy==1.8.2
+
+# Organize DockTope folder
+WORKDIR /docktope
+RUN tar -xvzf mgltools_x86_64Linux2_1.5.7rc1/MGLToolsPckgs.tar.gz &&\
+    mv autodock_vina_1_1_2_linux_x86/bin/vina* . &&\
+    mv docktope_files/* . &&\
+    rm -rf mgltools_x86_64Linux2_1.5.7rc1/ docktope_files autodock_vina_1_1_2_linux_x86/    
+
+## Set up the environment
+RUN echo "export DOCKTOPE_PATH=/docktope" >> /root/.bashrc &&\
+    echo "export PATH=\"\$PATH:/docktope\"" >> /root/.bashrc &&\
+    echo "export PATH=\"\$PATH:/docktope/MGLToolsPckgs/AutoDockTools/Utilities24\"" >> /root/.bashrc &&\
+    echo "export PYTHONPATH=\"\${PYTHONPATH}:/docktope/MGLToolsPckgs/\"" >> /root/.bashrc

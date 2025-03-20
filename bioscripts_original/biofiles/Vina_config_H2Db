@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:d7bf2162db746d5b2cb3aa276ef215dde2228d7ab89e6e9f65cb82c1dd0d787a
-size 188
+##Vina config para H2Db(cb)##
+receptor = donor_H2Db.pdbqt
+ligand = ligante.pdbqt
+
+center_x = 32.472
+center_y = 11.568
+center_z = 102.881
+
+size_x = 25
+size_y = 20
+size_z = 30
+
+  
+
+

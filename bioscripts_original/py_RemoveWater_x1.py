@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cf6d42aa084d027a65d369f3721b5b6b2da47e041b4a56e3d8ab3fb69c69dd43
-size 267
+#Script para remover H2O#
+from pymol.cgo import *
+from pymol import cmd
+
+cmd.load ("SAIDA.pdb")
+cmd.do ("remove SOL")
+cmd.do ("sele ////NA")
+cmd.do ("remove sele")
+cmd.do ("sele ////CL")
+cmd.do ("remove sele")
+cmd.do ("sele all")
+cmd.do ("save sele.pdb")

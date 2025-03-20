@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37790bcc57ddb48fc64ab5f386249eda18889b070e50d3f0ea596d7ddda4fff2
-size 203
+##Arquivo de configuração para D2 em H2kb:
+
+receptor = MHC_4D2.pdbqt
+ligand = ep_4D2.pdbqt
+
+center_x = 36.529
+center_y = 64.0
+center_z = 30.0
+
+size_x = 25
+size_y = 20
+size_z = 30
+
+  
+
+

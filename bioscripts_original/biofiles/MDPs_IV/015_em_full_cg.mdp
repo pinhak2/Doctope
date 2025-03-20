@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c572119ffd2903ce41d2a79edda009ae78a459ce58470c868817b006203629e7
-size 680
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+cpp                 =  /usr/bin/cpp
+define              =  -DFLEXIBLE
+constraints         =  none
+integrator          =  cg
+nsteps              =  10000
+nstcgsteep          =  500
+;
+;	Energy minimizing stuff
+;
+emtol               =  10
+emstep              =  0.001
+
+nstcomm             =  1
+ns_type             =  grid
+; New values for ptase
+coulombtype         =  PME
+rlist               =  1.2
+epsilon_rf          =  54
+rcoulomb            =  1.2
+vdwtype             =  cut-off
+rvdw                =  1.2
+;
+Tcoupl              =  no
+Pcoupl              =  no
+gen_vel             =  no

@@ -1,3 +1,14 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2ddfff85b67eb095bb090412a10216de7df5dbcc69746eaeda5f106bc344b783
-size 327
+#!/usr/bin/Rscript
+#v1.0
+HCA_data <- read.csv("HCA_input.csv", header = TRUE)
+#
+library (pvclust)
+#
+HCA_5k <- pvclust(HCA_data, method.dist='cor', method.hclust='average', nboot=10000)
+#
+HCA_5k_plot <- plot(HCA_5k)
+#
+#HCA_5k_plot2 <- pvrect(HCA_5k, alpha=0.95)
+#
+SEplot_HCA_5k <- seplot(HCA_5k, identify=FALSE)
+#

@@ -1,3 +1,28 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:6280debb5eae90db751081758cca0ce0a534ca0702e74c6c10c25bac5325a868
-size 576
+! delphi paramater file for "my-prot.pdb"
+!   creates a e-potential map in grasp format 
+!
+!   the settings here are fairly optimal for most
+!   proteins
+!
+!   see delphi manual for details
+!
+scale=1.0
+! perfil scales molecule to grid
+perfil=80
+! increased gsize increases resolution of grid
+gsize=251
+!
+! <<** Change next line to your pdb name! **>>
+in(pdb,file="TARGET.pdb")
+!
+in(siz,file="default.siz")
+in(crg,file="default.crg")
+indi=1.0
+exdi=80.0
+prbrad=1.4
+salt=0.2
+energy(s,g,c,ion)
+out(phi,unit=20,format=2)
+format=grasp
+solvpb=t
+frm=GRASP

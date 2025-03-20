@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8575157ee16ed9a8971393bb29efcbc76867f82d0209d8f26935ad861048780a
-size 191
+##Config do Vina para HLA-B*27:05##
+receptor = donor_HLA-B2705.pdbqt
+ligand = ligante.pdbqt
+
+center_x = 14.117
+center_y = 5.684
+center_z = 38.971
+
+size_x = 30
+size_y = 20
+size_z = 25

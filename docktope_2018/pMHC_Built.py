@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:678490a7dd29f73c8c5bc0ade0edd9b20bfbd61c4a3fdac01185d7467e320d76
-size 207
+#Script to build the pMHC complex:
+#v1.0
+from pymol.cgo import *
+from pymol import cmd
+
+cmd.load ("selected_MHC.pdb")
+cmd.load ("selected_ligand.pdb")
+cmd.do ("sele all")
+cmd.do ("save sele.pdb")
+

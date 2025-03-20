@@ -1,3 +1,69 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:740265b742b7ecb6413d83635af0147d42061895877fde243b33d5ffb04e572b
-size 1513
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+title               =  MD_term_d
+cpp                 =  /lib/cpp
+;define		        =  no
+constraints         =  all-bonds
+integrator          =  md
+tinit               =  1220.0	; ps !
+dt                  =  0.002	; ps !
+nsteps              =  160000	; total 320 ps ;1220-1540ps;
+nstcomm             =  1
+nstxout             =  200
+nstvout             =  200
+nstfout             =  0
+nstlog              =  500
+nstenergy           =  200
+nstlist             =  10
+ns_type             =  grid
+; New values for ptase
+coulombtype         =  PME
+rlist               =  1.2
+epsilon_rf          =  54
+rcoulomb            =  1.2
+vdwtype             =  cut-off
+rvdw                =  1.2
+;
+fourierspacing      =  0.12
+optimize_fft	    =  yes
+pme_order           =  4
+ewald_rtol          =  1e-5
+; Berendsen temperature coupling is on in four groups
+Tcoupl              =  v-rescale
+tc_grps             =  Protein Non-Protein
+tau_t               =  0.1 0.1
+ref_t               =  150 150 
+; Energy monitoring
+energygrps          =  Protein Non-Protein
+; Isotropic pressure coupling is now on
+Pcoupl              =  parrinello-rahman
+Pcoupltype          =  isotropic
+tau_p               =  2
+compressibility     =  4.5e-5
+ref_p               =  1.0
+; Generate velocites is off at 150 K.
+gen_vel             =  no 
+gen_temp            =  150.0
+gen_seed            =  173529
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

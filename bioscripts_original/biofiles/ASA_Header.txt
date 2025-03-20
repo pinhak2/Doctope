@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9acbba05ec628a7058005c3cf6975b1c3c02bf3cf76e27a1aef0b9f0ef9bee44
-size 734
+ComplexID EP1 EP2 EP3 EP4 EP5 EP6 EP7 EP8 EP9 GLU19 GLU58 TYR59 GLY62 ARG65 LYS66 LYS68 ALA69 SER71 GLN72 THR73 ARG75 VAL76 LYS146 TRP147 ALA149 ALA150 HIS151 VAL152 GLU154 GLN155 ALA158 TYR159 GLY162 THR163 GLU166 TRP167 ARG170 G1_Red_Mean G1_Red_SD G1_Green_Mean G1_Green_SD G1_Blue_Mean G1_Blue_SD G2_Red_Mean G2_Red_SD G2_Green_Mean G2_Green_SD G2_Blue_Mean G2_Blue_SD G3_Red_Mean G3_Red_SD G3_Green_Mean G3_Green_SD G3_Blue_Mean G3_Blue_SD G4_Red_Mean G4_Red_SD G4_Green_Mean G4_Green_SD G4_Blue_Mean G4_Blue_SD G5_Red_Mean G5_Red_SD G5_Green_Mean G5_Green_SD G5_Blue_Mean G5_Blue_SD G6_Red_Mean G6_Red_SD G6_Green_Mean G6_Green_SD G6_Blue_Mean G6_Blue_SD G7_Red_Mean G7_Red_SD G7_Green_Mean G7_Green_SD G7_Blue_Mean G7_Blue_SD

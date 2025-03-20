@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:936377137d83d4793c902c03476a8793ac5b557710ff60af84c393c653ac18ba
-size 192
+##Vina configuration file for B2705 (D2)
+
+receptor = MHC_4D2.pdbqt
+ligand = ep_4D2.pdbqt
+
+center_x = 14.117
+center_y = 5.684
+center_z = 38.971
+
+size_x = 30
+size_y = 20
+size_z = 25

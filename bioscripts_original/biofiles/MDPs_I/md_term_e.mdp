@@ -1,3 +1,66 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:56abdad75a9f7fcf919074829eabbae86b7e8b3f0bcec7271556ffab04cec29b
-size 1392
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+title               =  MD_term_e
+cpp                 =  /lib/cpp
+define		    =  -DPOSRES
+constraints         =  all-bonds
+integrator          =  md
+tinit               =  20.0
+dt                  =  0.002	; ps !
+nsteps              =  2500	; total 5 ps ;20ps-25ps;.
+nstcomm             =  1
+nstxout             =  200
+nstvout             =  200
+nstfout             =  0
+nstlog              =  500
+nstenergy           =  200
+nstlist             =  10
+ns_type             =  grid
+coulombtype         =  PME
+rlist               =  0.9
+rcoulomb            =  0.9
+rvdw                =  0.9
+fourierspacing      =  0.12
+optimize_fft	    =  yes
+pme_order           =  4
+ewald_rtol          =  1e-5
+; Berendsen temperature coupling is on in four groups
+Tcoupl              =  berendsen
+tc-grps	            =  Protein SOL
+tau_t               =  0.1 0.1
+ref_t               =  200 200
+; Energy monitoring
+energygrps          =  Protein SOL 
+; Isotropic pressure coupling is now on
+Pcoupl              =  berendsen
+Pcoupltype          =  isotropic
+tau_p               =  2
+compressibility     =  4.5e-5
+ref_p               =  1.0
+; Generate velocites is off at 200 K.
+gen_vel             =  no 
+gen_temp            =  200.0
+gen_seed            =  173529
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

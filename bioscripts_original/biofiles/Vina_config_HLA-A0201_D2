@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:fb9a047580227600a64965cd07e481f140c1cf53947bad68960d39025aca297e
-size 201
+##Arquivo de configuração para D2 em HLA-A0201: 
+
+receptor = MHC_4D2.pdbqt
+ligand = ep_4D2.pdbqt
+
+center_x = 6.534
+center_y = 20.549
+center_z = 7.041
+
+size_x = 20
+size_y = 25
+size_z = 30

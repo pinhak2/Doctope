@@ -1,3 +1,11 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a2c908e892238e3f49a70f5db6e6af3ba66a84c7cd86c74755e4393959eb4c53
-size 193
+##Config do Vina para HLA0201(cb)##
+receptor = donor_HLA-A0201.pdbqt
+ligand = ligante.pdbqt
+
+center_x = 6.534
+center_y = 20.549
+center_z = 7.041
+
+size_x = 20
+size_y = 25
+size_z = 30

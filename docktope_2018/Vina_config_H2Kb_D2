@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e7625092d0eb3a37a18f1b9a417b093a7282610e892e7dd48a2141467af66a43
-size 198
+##Vina configuration file for H2KB (D2)
+
+receptor = MHC_4D2.pdbqt
+ligand = ep_4D2.pdbqt
+
+center_x = 36.529
+center_y = 64.0
+center_z = 30.0
+
+size_x = 25
+size_y = 20
+size_z = 30
+
+  
+
+

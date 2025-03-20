@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:605b2764a995d55c775444866549c95d4b4707eefdec1d97d9bbd4636f97b7c7
-size 567
+#Etapas para visulização das cargas computadas pelo Delphi:
+1) Abra o Chimera;
+2) Carregue a sessão com a posição referência para HLA-A*02:01;
+3) Carregue a estrutura do primeiro pMHC do seu subset (editedfiles/group_10/??-cA.pdb);
+4) Coloque a superfície e remova o ribon;
+5) Carregue o arquivo *.phi correspondente via "Surface"/"Binding Ananlysis" > Electrostaic Surface Coloring;
+6) Utilize o comando MatchMaker na aba Structure Comparison para orientar seu novo pMHC;
+7) Esconda o template e salve a imagem (pode ser preciso ajustar o zoom!);
+
+

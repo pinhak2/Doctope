@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8f8124fbe4e8586d88e8795a937775f60148e096233cb155d1e66d32f1575d05
-size 207
+##Vina configuration file for H2DB (D1)
+
+receptor = donor_H2Db.pdbqt
+ligand = peptide.pdbqt
+
+center_x = 32.472
+center_y = 11.568
+center_z = 102.881
+
+size_x = 25
+size_y = 20
+size_z = 30
+
+  
+
+

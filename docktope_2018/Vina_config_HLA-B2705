@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9d6cb1444367ae3c38ec768e87af04ae4f3711778b7dd6614e1ee5084097188f
-size 201
+##Vina configuration file for B2705 (D1)
+
+receptor = donor_HLA-B2705.pdbqt
+ligand = peptide.pdbqt
+
+center_x = 14.117
+center_y = 5.684
+center_z = 38.971
+
+size_x = 30
+size_y = 20
+size_z = 25

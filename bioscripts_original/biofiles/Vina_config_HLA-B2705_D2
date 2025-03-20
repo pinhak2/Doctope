@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:835a5487f54113a9b4a65559542e7c21e5373c045fc76c2599f456eaaa084518
-size 201
+##Arquivo de configuração para D2 em HLA-B2705:
+
+receptor = MHC_4D2.pdbqt
+ligand = ep_4D2.pdbqt
+
+center_x = 14.117
+center_y = 5.684
+center_z = 38.971
+
+size_x = 30
+size_y = 20
+size_z = 25
