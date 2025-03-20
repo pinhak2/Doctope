@@ -1,3 +1,1 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:cec07f81874c50ad31202b7a3bd7bb3cfddfa8652820dd68fca96272d5936227
-size 166
+docker_files/mgltools_x86_64Linux2_1.5.7rc1.tar.gz filter=lfs diff=lfs merge=lfs -text
